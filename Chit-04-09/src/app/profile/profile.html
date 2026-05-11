@@ -1,0 +1,24 @@
+<div class="profile-container">
+  <div class="profile-box">
+    <h1>Profile</h1>
+    
+    @if (authService.currentUser(); as user) {
+      <div class="user-details">
+        <div class="detail-item">
+          <label>Full Name:</label>
+          <p>{{ user.fullName }}</p>
+        </div>
+
+        <div class="detail-item">
+          <label>Email:</label>
+          <p>{{ user.email }}</p>
+        </div>
+      </div>
+
+      <button type="button" class="btn-logout" (click)="logout()">Logout</button>
+    } @else {
+      <p class="not-logged-in">You are not logged in.</p>
+      <button type="button" class="btn-primary" (click)="navigateToLogin()">Go to Login</button>
+    }
+  </div>
+</div>
