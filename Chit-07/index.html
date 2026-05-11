@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>jQuery Mobile Website</title>
+
+    <!-- jQuery Mobile CSS -->
+
+    <link rel="stylesheet"
+    href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- jQuery Mobile JS -->
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Home Page -->
+
+    <div data-role="page" id="home">
+
+        <!-- Header -->
+
+        <div data-role="header">
+
+            <h1>Mobile Website</h1>
+
+        </div>
+
+        <!-- Content -->
+
+        <div data-role="content">
+
+            <h2>Welcome to jQuery Mobile</h2>
+
+            <p>This is Home Page</p>
+
+            <!-- Buttons -->
+
+            <a href="#about"
+               data-role="button"
+               data-icon="info"
+               data-transition="slide">
+
+               About Page
+
+            </a>
+
+            <a href="#contact"
+               data-role="button"
+               data-icon="phone"
+               data-transition="flip">
+
+               Contact Page
+
+            </a>
+
+            <!-- Layout Widget -->
+
+            <div class="ui-grid-a">
+
+                <div class="ui-block-a">
+
+                    <div class="ui-bar ui-bar-a">
+
+                        Left Block
+
+                    </div>
+
+                </div>
+
+                <div class="ui-block-b">
+
+                    <div class="ui-bar ui-bar-b">
+
+                        Right Block
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <br>
+
+            <!-- Event Button -->
+
+            <button id="clickBtn">
+
+                Click Event
+
+            </button>
+
+        </div>
+
+        <!-- Footer -->
+
+        <div data-role="footer">
+
+            <h4>Footer Section</h4>
+
+        </div>
+
+    </div>
+
+    <!-- About Page -->
+
+    <div data-role="page" id="about">
+
+        <div data-role="header">
+
+            <h1>About Page</h1>
+
+        </div>
+
+        <div data-role="content">
+
+            <p>This is About Page</p>
+
+            <a href="#home"
+               data-role="button"
+               data-icon="home"
+               data-transition="fade">
+
+               Go Home
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- Contact Page -->
+
+    <div data-role="page" id="contact">
+
+        <div data-role="header">
+
+            <h1>Contact Page</h1>
+
+        </div>
+
+        <div data-role="content">
+
+            <p>Mobile Number: 9876543210</p>
+
+            <a href="#home"
+               data-role="button"
+               data-icon="back"
+               data-transition="pop">
+
+               Back
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- External JS -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>

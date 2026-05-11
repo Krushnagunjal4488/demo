@@ -1,0 +1,39 @@
+body{
+
+    margin: 0;
+
+    font-family: Arial;
+
+}
+
+.sidebar{
+
+    background: #343a40;
+
+    min-height: 100vh;
+
+}
+
+.nav-link{
+
+    padding: 12px;
+
+    font-size: 18px;
+
+}
+
+.nav-link:hover{
+
+    background: #495057;
+
+    border-radius: 5px;
+
+}
+
+.card{
+
+    border: none;
+
+    border-radius: 10px;
+
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>REST API App</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        input{
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button{
+            padding: 8px 15px;
+        }
+
+        .box{
+            border:1px solid gray;
+            padding:10px;
+            margin-top:10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>User Management System</h1>
+
+    <!-- Insert Form -->
+
+    <h2>Add User</h2>
+
+    <form action="/add" method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Enter Name"
+            required
+        >
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter Email"
+            required
+        >
+
+        <button type="submit">
+            Add User
+        </button>
+
+    </form>
+
+    <hr>
+
+    <!-- User List -->
+
+    <h2>Update User</h2>
+
+    <% users.forEach(user => { %>
+
+        <div class="box">
+
+            <form action="/update/<%= user._id %>" method="POST">
+
+                <input
+                    type="text"
+                    name="name"
+                    value="<%= user.name %>"
+                >
+
+                <input
+                    type="email"
+                    name="email"
+                    value="<%= user.email %>"
+                >
+
+                <button type="submit">
+                    Update
+                </button>
+
+            </form>
+
+        </div>
+
+    <% }) %>
+
+</body>
+</html>

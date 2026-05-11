@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Portal</title>
+
+    <!-- jQuery Mobile CSS -->
+
+    <link rel="stylesheet"
+    href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- jQuery Mobile JS -->
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Mobile Page -->
+
+    <div data-role="page" id="home" data-theme="b">
+
+        <!-- Header -->
+
+        <div data-role="header">
+
+            <h1>Student Registration Portal</h1>
+
+        </div>
+
+        <!-- Content -->
+
+        <div data-role="content">
+
+            <h2>Registration Form</h2>
+
+            <!-- Form -->
+
+            <form id="studentForm">
+
+                <label for="name">
+
+                    Student Name
+
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter Student Name"
+                >
+
+                <label for="email">
+
+                    Email Address
+
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter Email Address"
+                >
+
+                <label for="course">
+
+                    Select Course
+
+                </label>
+
+                <select id="course">
+
+                    <option>Computer Engineering</option>
+
+                    <option>Information Technology</option>
+
+                    <option>ENTC Engineering</option>
+
+                </select>
+
+                <button type="button" id="submitBtn">
+
+                    Register
+
+                </button>
+
+            </form>
+
+            <br>
+
+            <!-- List View -->
+
+            <ul data-role="listview"
+                data-inset="true">
+
+                <li>
+
+                    Dashboard
+
+                </li>
+
+                <li>
+
+                    Courses
+
+                </li>
+
+                <li>
+
+                    Contact Us
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Footer -->
+
+        <div data-role="footer">
+
+            <h4>
+
+                Student Management System
+
+            </h4>
+
+        </div>
+
+    </div>
+
+    <!-- External JS -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
